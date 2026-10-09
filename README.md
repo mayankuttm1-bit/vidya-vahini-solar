@@ -38,7 +38,14 @@
    - `projects.html`: Filterable project portfolio & video showcase
    - `about.html`: Corporate governance, MCA compliance & technical standards
    - `contact.html`: Dual-office location maps & feasibility inquiry
-   - `blogs.html`: 6 illustrated engineering guides & subsidy tutorials
+   - `blogs.html`: Knowledge Hub linking to all 7 dedicated technical & financial guides:
+     - `blog-pm-surya-ghar.html`: PM Surya Ghar ₹1,08,000 Subsidy in Prayagraj
+     - `blog-solar-atta-chakki.html`: 15HP Solar Atta Chakki Economics & Diesel Elimination
+     - `blog-topcon-vs-mono-perc.html`: TopCon vs Mono PERC in 46°C UP Summer Heat
+     - `blog-net-metering-uppcl.html`: 5-Stage UPPCL / PuVVNL Net-Metering Approvals
+     - `blog-solar-water-pumps.html`: 3HP–7.5HP Submersible Pumping in Vindhyan Soil
+     - `blog-on-grid-vs-hybrid.html`: On-Grid vs Off-Grid vs Hybrid Battery Architectures
+     - `blog-solar-maintenance.html`: Soiling Loss, Dust Impact & Plant O&M Protocols
 6. **Hardware-Accelerated Clean-Tech Animations**:
    - IntersectionObserver scroll reveals (`reveal-init`, `reveal-left`, `reveal-scale`)
    - Animated counter roll-ups on regional trust metrics
