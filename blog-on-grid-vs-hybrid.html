@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On-Grid vs Off-Grid vs Hybrid Solar: Which Fits UP Outages? | Vidya Vahini Solar</title>
+  <meta name="description" content="Detailed engineering comparison of On-Grid, Off-Grid, and Hybrid solar architectures in Prayagraj & UP. Anti-islanding safety, LiFePO4 battery storage, and ROI analysis.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            solarDark: '#0B132B',
+            solarNavy: '#111D4A',
+            solarSlate: '#1E293B',
+            solarAmber: '#F59E0B',
+            solarAmberHover: '#D97706',
+            solarEmerald: '#10B981',
+            solarLight: '#F8FAFC'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-amber-500 selection:text-slate-900">
+
+  <!-- Micro Top Bar -->
+  <div class="bg-slate-950 text-slate-300 text-xs py-2 border-b border-slate-800 hidden sm:block">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <a href="tel:+919450509659" class="flex items-center hover:text-amber-400 transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 mr-1.5 text-amber-500"></i>
+          <span>+91 94505 09659</span>
+        </a>
+        <a href="mailto:vidyavahinisolaragency@gmail.com" class="flex items-center hover:text-amber-400 transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5 mr-1.5 text-amber-500"></i>
+          <span>vidyavahinisolaragency@gmail.com</span>
+        </a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-amber-950 text-amber-400 border border-amber-800">
+          <i data-lucide="battery-charging" class="w-3 h-3 mr-1 text-amber-400"></i> Certified Hybrid & Storage System Integrator
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <header class="sticky top-0 z-40 glass-dark border-b border-slate-800 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Vector HTML Brand Logo -->
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <svg class="w-12 h-12 flex-shrink-0 transition-transform group-hover:scale-105 duration-200" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="44" stroke="#F59E0B" stroke-width="2" stroke-dasharray="4 6" opacity="0.6"/>
+            <path d="M 32 30 A 28 28 0 0 1 78 54 A 32 32 0 0 0 32 30 Z" fill="#F59E0B"/>
+            <circle cx="62" cy="38" r="14" fill="#D97706"/>
+            <polygon points="18,72 56,58 86,66 44,88" fill="#0284C7" stroke="#38BDF8" stroke-width="1.5"/>
+            <path d="M 44 88 Q 30 76 38 60 Q 42 70 56 68 Z" fill="#10B981"/>
+            <polygon points="52,42 45,54 51,54 44,68 59,51 52,51" fill="#FEF08A"/>
+          </svg>
+          <div class="flex flex-col">
+            <span class="text-xl font-extrabold tracking-tight text-white flex items-center leading-tight">
+              VIDYA VAHINI <span class="text-amber-400 ml-1.5 font-black">SOLAR</span>
+            </span>
+            <span class="text-[10px] tracking-widest text-slate-400 uppercase font-bold">
+              Agency • Unit of Risaenergy Pvt Ltd
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium">
+          <a href="index.html" class="text-slate-300 hover:text-amber-400 transition-colors">Home</a>
+          <a href="services.html" class="text-slate-300 hover:text-amber-400 transition-colors">Our Solutions</a>
+          <a href="projects.html" class="text-slate-300 hover:text-amber-400 transition-colors">Projects</a>
+          <a href="about.html" class="text-slate-300 hover:text-amber-400 transition-colors">About Us</a>
+          <a href="blogs.html" class="text-amber-400 font-semibold border-b-2 border-amber-400 pb-1">Knowledge Hub</a>
+          <a href="contact.html" class="text-slate-300 hover:text-amber-400 transition-colors">Contact</a>
+        </nav>
+
+        <div class="hidden md:flex items-center space-x-3.5">
+          <button type="button" class="trigger-quote-modal inline-flex items-center px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-md">
+            Get Free Quote
+          </button>
+        </div>
+
+        <!-- Mobile Header Actions -->
+        <div class="lg:hidden flex items-center space-x-2">
+          <a href="tel:+919450509659" class="p-2.5 rounded-xl bg-slate-800/90 text-amber-400 border border-slate-700 hover:bg-slate-700 flex items-center justify-center transition-colors">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+          </a>
+          <a href="https://wa.me/918953011508" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-emerald-950 text-emerald-400 border border-emerald-800 hover:bg-emerald-900 flex items-center justify-center transition-colors">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+          </a>
+          <button id="mobile-menu-btn" type="button" class="p-2.5 rounded-xl bg-slate-800/90 text-slate-200 border border-slate-700 hover:text-white hover:bg-slate-700 focus:outline-none transition-colors">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div id="mobile-menu-drawer" class="hidden lg:hidden fixed inset-0 z-[9999] bg-slate-950/80 backdrop-blur-sm transition-opacity">
+    <div class="fixed inset-y-0 right-0 max-w-xs sm:max-w-sm w-full bg-slate-900 border-l border-slate-800 p-6 flex flex-col justify-between shadow-2xl z-[10000] overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-5 border-b border-slate-800">
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+            <span class="text-base font-extrabold text-white">Vidya Vahini Menu</span>
+          </div>
+          <button id="close-mobile-menu" type="button" class="p-2 rounded-lg bg-slate-800 text-slate-400 hover:text-white border border-slate-700">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <nav class="mt-6 flex flex-col space-y-2 text-sm font-semibold">
+          <a href="index.html" class="flex items-center justify-between px-4 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">
+            <span class="flex items-center"><i data-lucide="home" class="w-4 h-4 mr-3 text-slate-400"></i> Home</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-600"></i>
+          </a>
+          <a href="services.html" class="flex items-center justify-between px-4 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">
+            <span class="flex items-center"><i data-lucide="zap" class="w-4 h-4 mr-3 text-slate-400"></i> Our Solutions</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-600"></i>
+          </a>
+          <a href="projects.html" class="flex items-center justify-between px-4 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">
+            <span class="flex items-center"><i data-lucide="layout-grid" class="w-4 h-4 mr-3 text-slate-400"></i> Projects (80+ Sites)</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-600"></i>
+          </a>
+          <a href="about.html" class="flex items-center justify-between px-4 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">
+            <span class="flex items-center"><i data-lucide="shield-check" class="w-4 h-4 mr-3 text-slate-400"></i> About & Legal</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-600"></i>
+          </a>
+          <a href="blogs.html" class="flex items-center justify-between px-4 py-3 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/30 font-bold">
+            <span class="flex items-center"><i data-lucide="book-open" class="w-4 h-4 mr-3 text-amber-400"></i> Knowledge Hub</span>
+            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+          <a href="contact.html" class="flex items-center justify-between px-4 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">
+            <span class="flex items-center"><i data-lucide="phone-call" class="w-4 h-4 mr-3 text-slate-400"></i> Contact Us</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-600"></i>
+          </a>
+        </nav>
+      </div>
+      <div class="pt-6 border-t border-slate-800 space-y-3">
+        <button type="button" class="trigger-quote-modal w-full py-3 px-4 rounded-xl text-xs font-bold uppercase tracking-wider bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-lg flex items-center justify-center space-x-2">
+          <i data-lucide="calculator" class="w-4 h-4"></i>
+          <span>Get Free Solar Quote</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Breadcrumbs & Header -->
+  <article class="py-12 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center space-x-2 text-xs text-slate-500 mb-6">
+        <a href="index.html" class="hover:text-amber-600 transition-colors">Home</a>
+        <span>/</span>
+        <a href="blogs.html" class="hover:text-amber-600 transition-colors">Knowledge Hub</a>
+        <span>/</span>
+        <span class="text-slate-800 font-semibold truncate">On-Grid vs Off-Grid vs Hybrid</span>
+      </nav>
+
+      <div class="flex flex-wrap items-center gap-3 mb-4">
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-300">
+          <i data-lucide="cpu" class="w-3.5 h-3.5 mr-1.5 text-amber-600"></i> Solar Architecture Analysis
+        </span>
+        <span class="text-xs text-slate-500 flex items-center">
+          <i data-lucide="clock" class="w-3.5 h-3.5 mr-1 text-slate-400"></i> 8 Min Read
+        </span>
+        <span class="text-xs text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full font-semibold">
+          Energy Storage Comparison
+        </span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+        On-Grid vs Off-Grid vs Hybrid: Which Solar Architecture Fits Your Outage Realities in Eastern UP?
+      </h1>
+
+      <p class="text-lg text-slate-600 mt-4 leading-relaxed font-normal">
+        Why pure on-grid systems shut down during power cuts (Anti-Islanding safety), when lithium battery storage is essential, and how hybrid solar delivers continuous power while maintaining net-metering subsidy eligibility.
+      </p>
+
+      <div class="mt-6 pt-6 border-t border-slate-200 flex items-center justify-between text-xs text-slate-600">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-full bg-slate-900 text-amber-400 flex items-center justify-center font-bold text-sm">
+            EE
+          </div>
+          <div>
+            <div class="font-bold text-slate-900">Vidya Vahini Electrical Engineering Team</div>
+            <div class="text-slate-500">Lead Systems Architect • Prayagraj</div>
+          </div>
+        </div>
+        <div class="text-right">
+          <span class="font-semibold text-slate-900">Technical Guide 2026</span>
+          <div class="text-slate-400">Grid Interconnection & ESS</div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Featured Image Banner -->
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-8">
+    <div class="rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+      <img src="assets/images/sol-hybrid.jpg" alt="Commercial Hybrid Solar Inverter and Lithium Battery Storage" class="w-full h-72 sm:h-96 object-cover">
+    </div>
+  </div>
+
+  <!-- Body Content -->
+  <main class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 text-slate-700 leading-relaxed">
+
+      <!-- Critical Notice / Highlight -->
+      <div class="p-6 sm:p-8 rounded-2xl bg-amber-50/80 border border-amber-300">
+        <h2 class="text-lg font-bold text-amber-950 flex items-center">
+          <i data-lucide="alert-triangle" class="w-5 h-5 mr-2 text-amber-600"></i> The Number #1 Consumer Surprise in Uttar Pradesh
+        </h2>
+        <p class="text-sm text-amber-900 mt-2 leading-relaxed">
+          The most common complaint from first-time solar buyers in Prayagraj is: <em>"The sun is shining outside, but when UPPCL cuts the power, my solar panels stop powering my home!"</em> This is NOT a defect; it is mandatory international safety engineering called <strong>Anti-Islanding</strong>. Understanding this distinction is the single most important factor before investing in solar.
+        </p>
+      </div>
+
+      <!-- Section 1: The Three Architectures Explained -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          1. The Three Solar Architectures Decoded
+        </h2>
+        <p>
+          Not all solar systems operate the same way. The equipment you choose determines whether you are seeking maximum financial return or 24/7 blackout security.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+          
+          <!-- On-Grid Card -->
+          <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50 flex flex-col justify-between space-y-4">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-100 px-2.5 py-0.5 rounded">
+                Type A: Grid-Tied (On-Grid)
+              </span>
+              <h3 class="text-lg font-extrabold text-slate-900 mt-3">Pure Net-Metered Solar</h3>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Panels connect directly to a grid-tie inverter that syncs with UPPCL voltage and frequency. No batteries.
+              </p>
+              <ul class="text-xs text-slate-600 space-y-1.5 mt-3 list-disc list-inside">
+                <li>Eligible for PM Surya Ghar ₹1,08,000 Subsidy</li>
+                <li>Lowest capital cost, highest ROI (2.5 - 3 yrs)</li>
+                <li><strong>Shuts down during grid blackouts</strong></li>
+              </ul>
+            </div>
+            <div class="pt-3 border-t border-slate-200 text-xs font-bold text-slate-900">
+              Best for: Urban homes with &lt; 1 hour daily outage
+            </div>
+          </div>
+
+          <!-- Off-Grid Card -->
+          <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50 flex flex-col justify-between space-y-4">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-rose-600 bg-rose-100 px-2.5 py-0.5 rounded">
+                Type B: Standalone (Off-Grid)
+              </span>
+              <h3 class="text-lg font-extrabold text-slate-900 mt-3">Battery-Backed Island</h3>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Panels charge a battery bank (Lead-Acid C10 or LiFePO4). Loads are powered via the battery inverter.
+              </p>
+              <ul class="text-xs text-slate-600 space-y-1.5 mt-3 list-disc list-inside">
+                <li>100% independence from UPPCL grid</li>
+                <li>Powers equipment during all outages</li>
+                <li><strong>No net-metering export & no Govt subsidy</strong></li>
+                <li>Recurring battery replacement expense</li>
+              </ul>
+            </div>
+            <div class="pt-3 border-t border-slate-200 text-xs font-bold text-slate-900">
+              Best for: Remote farmhouses, tube-wells, deep rural areas
+            </div>
+          </div>
+
+          <!-- Hybrid Card -->
+          <div class="p-6 rounded-2xl border-2 border-emerald-500 bg-emerald-50/30 flex flex-col justify-between space-y-4 shadow-md">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded font-black">
+                Type C: Hybrid ESS (Recommended)
+              </span>
+              <h3 class="text-lg font-extrabold text-slate-900 mt-3">Smart Net-Metered + Storage</h3>
+              <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                Intelligent hybrid inverter with dual ports: exports surplus to UPPCL net meter AND charges emergency batteries.
+              </p>
+              <ul class="text-xs text-slate-600 space-y-1.5 mt-3 list-disc list-inside">
+                <li><strong>0-second UPS switchover during power cuts</strong></li>
+                <li>Exports surplus power to reduce electric bills to ₹0</li>
+                <li>Eligible for net-metering permissions</li>
+                <li>Higher upfront inverter and battery investment</li>
+              </ul>
+            </div>
+            <div class="pt-3 border-t border-emerald-200 text-xs font-bold text-emerald-800">
+              Best for: Clinics, hospitals, petrol pumps, semi-urban homes
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 2: Why Anti-Islanding is Mandatory -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          2. The Science of "Anti-Islanding": Why Solar Stops in Blackouts
+        </h2>
+        <p>
+          To understand why On-Grid systems turn off when the grid fails, imagine this scenario:
+        </p>
+        <div class="p-5 rounded-xl border border-slate-200 bg-slate-50 space-y-3 text-sm">
+          <p>
+            A high-voltage transformer in your neighborhood trips, and a UPPCL distribution lineman climbs a ladder to fix a fallen 11 kV conductor line. He has verified that the grid substation has isolated power.
+          </p>
+          <p class="text-rose-700 font-semibold">
+            However, if your rooftop solar inverter continued pushing 230V or 415V electricity backward through your service wire into the local pole transformer, it would step back up into lethal 11,000-volt power on the lines where the lineman is working!
+          </p>
+          <p>
+            Under <strong>CEA (Central Electricity Authority) Regulations 2024 and IEEE 1547</strong>, all grid-tied solar inverters must disconnect from the AC output within <strong>20 milliseconds</strong> the moment grid voltage disappears.
+          </p>
+        </div>
+        <p>
+          <strong>The Solution:</strong> If you want uninterrupted power during outages, you cannot use a pure on-grid inverter alone. You either need a <em>Hybrid Inverter with an automatic transfer switch (ATS)</em> or keep your conventional domestic inverter charged by your solar-powered home.
+        </p>
+      </section>
+
+      <!-- Section 3: Head-to-Head Specification Matrix -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          3. Architecture Comparison Matrix
+        </h2>
+        
+        <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
+          <table class="min-w-full text-left text-xs sm:text-sm">
+            <thead class="bg-slate-900 text-white uppercase text-[11px]">
+              <tr>
+                <th class="p-3.5">Feature</th>
+                <th class="p-3.5">On-Grid Solar</th>
+                <th class="p-3.5">Off-Grid Solar</th>
+                <th class="p-3.5 text-amber-300">Hybrid Solar (ESS)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50">
+                <td class="p-3.5 font-bold text-slate-900">Discom Net-Metering Export</td>
+                <td class="p-3.5 text-emerald-700 font-bold">Yes (Full Credit)</td>
+                <td class="p-3.5 text-rose-600 font-semibold">No (Wasted Surplus)</td>
+                <td class="p-3.5 text-emerald-700 font-bold">Yes (Full Credit)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3.5 font-bold text-slate-900">Power During Grid Outage</td>
+                <td class="p-3.5 text-rose-600 font-semibold">Zero Power (Shuts Down)</td>
+                <td class="p-3.5 text-emerald-700 font-bold">100% Continuous</td>
+                <td class="p-3.5 text-emerald-700 font-bold">100% Continuous (&lt;15ms UPS)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3.5 font-bold text-slate-900">PM Surya Ghar Subsidy</td>
+                <td class="p-3.5 text-emerald-700 font-bold">Eligible (Up to ₹1,08,000)</td>
+                <td class="p-3.5 text-slate-400">Not Applicable</td>
+                <td class="p-3.5 text-emerald-700 font-bold">Eligible on Solar PV Portion</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3.5 font-bold text-slate-900">Battery Required</td>
+                <td class="p-3.5 text-slate-500">None (Zero Maintenance)</td>
+                <td class="p-3.5 text-amber-700 font-semibold">Heavy Battery Bank</td>
+                <td class="p-3.5 text-emerald-800 font-semibold">Modular LiFePO4 / Lead-Acid</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3.5 font-bold text-slate-900">Payback Period (ROI)</td>
+                <td class="p-3.5 font-black text-emerald-700">2.5 to 3.2 Years</td>
+                <td class="p-3.5 text-slate-600">6.0 to 7.5 Years</td>
+                <td class="p-3.5 font-bold text-slate-900">4.0 to 4.8 Years</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 4: Battery Storage Deep Dive (LiFePO4 vs Lead-Acid) -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          4. Battery Tech: Lithium Iron Phosphate (LiFePO4) vs Tubular Lead-Acid
+        </h2>
+        <p>
+          If you opt for a Hybrid or Off-Grid system, the battery choice dictates performance and maintenance overhead over the next 10 years:
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+          <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50 space-y-3">
+            <span class="text-xs font-bold uppercase text-slate-500">Legacy Technology</span>
+            <h3 class="text-base font-bold text-slate-900">Tall Tubular Lead-Acid (C10)</h3>
+            <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+              <li><strong>Lifespan:</strong> 1,000 – 1,400 cycles (~3 to 4 years of daily cycling).</li>
+              <li><strong>Usable Depth of Discharge (DoD):</strong> Only 50% to 60%. (Draining past 50% permanently damages lead plates).</li>
+              <li><strong>Maintenance:</strong> Requires quarterly distilled water topping and acid fume ventilation.</li>
+              <li><strong>Efficiency:</strong> ~75% round-trip efficiency (energy lost as heat during charging).</li>
+            </ul>
+          </div>
+
+          <div class="p-6 rounded-2xl border-2 border-emerald-500 bg-emerald-50/40 space-y-3 shadow-sm">
+            <span class="text-xs font-bold uppercase text-emerald-700 font-black">Modern Standard</span>
+            <h3 class="text-base font-bold text-slate-900">Lithium Ferro Phosphate (LiFePO4)</h3>
+            <ul class="text-xs text-slate-700 space-y-2 list-disc list-inside">
+              <li><strong>Lifespan:</strong> 5,000 – 6,000 cycles (~12 to 15 years of daily cycling).</li>
+              <li><strong>Usable Depth of Discharge (DoD):</strong> 90% to 95% usable capacity.</li>
+              <li><strong>Zero Maintenance:</strong> Completely sealed, wall-mountable, zero acid fumes or topping required.</li>
+              <li><strong>Efficiency:</strong> &gt;96% round-trip efficiency with integrated Battery Management System (BMS).</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: The Outage Reality in Prayagraj -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          5. Which System Should You Choose Based on Your Locality?
+        </h2>
+        <p>
+          At Vidya Vahini Solar Agency, our site engineers assess each client's specific substation feeder reliability before recommending an architecture:
+        </p>
+
+        <div class="space-y-4">
+          <div class="p-5 rounded-xl border border-slate-200 bg-slate-50">
+            <div class="flex items-center space-x-2">
+              <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+              <h3 class="font-bold text-slate-900">Zone 1: Urban Prayagraj (Civil Lines, Tagore Town, George Town)</h3>
+            </div>
+            <p class="text-xs text-slate-600 mt-2">
+              <strong>Feeder Outage:</strong> Less than 45 minutes / day. Power supply is very stable.
+              <br>
+              <strong>Optimal Setup:</strong> <strong>Pure On-Grid System</strong>. Pair your existing domestic inverter (1kVA / 150Ah) to handle the brief 30-minute blackout. Maximize PM Surya Ghar subsidy and enjoy a fast 2.5-year ROI.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-xl border border-slate-200 bg-slate-50">
+            <div class="flex items-center space-x-2">
+              <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+              <h3 class="font-bold text-slate-900">Zone 2: Semi-Urban / Industrial (Naini, Jhunsi, Phaphamau, Manauri)</h3>
+            </div>
+            <p class="text-xs text-slate-600 mt-2">
+              <strong>Feeder Outage:</strong> 2 to 4 hours / day, plus occasional scheduled line maintenance.
+              <br>
+              <strong>Optimal Setup:</strong> <strong>Smart Hybrid System with LiFePO4 Storage</strong>. Essential for clinics, small factories, schools, and offices that cannot tolerate midday equipment blackouts.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-xl border border-slate-200 bg-slate-50">
+            <div class="flex items-center space-x-2">
+              <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+              <h3 class="font-bold text-slate-900">Zone 3: Rural Outskirts (Koraon, Shankargarh, Jasra, Meja Interior)</h3>
+            </div>
+            <p class="text-xs text-slate-600 mt-2">
+              <strong>Feeder Outage:</strong> 6 to 10 hours / day or irregular 3-phase rostering.
+              <br>
+              <strong>Optimal Setup:</strong> <strong>Heavy-Duty Hybrid or Direct VFD Solar Architecture</strong> (for mills and agriculture). Eliminates diesel generator usage completely.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom Conversion CTA -->
+      <div class="p-8 sm:p-10 rounded-3xl bg-slate-900 text-white text-center space-y-4 shadow-xl border border-slate-800">
+        <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center mx-auto mb-2 border border-amber-500/40">
+          <i data-lucide="zap" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-black tracking-tight">
+          Unsure Which Architecture Fits Your Rooftop?
+        </h3>
+        <p class="text-slate-300 text-sm max-w-xl mx-auto leading-relaxed">
+          Our certified electrical engineers will analyze your UPPCL consumer bills, historical feeder logs, and connected appliances to size the most cost-effective solar system.
+        </p>
+        <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button type="button" class="trigger-quote-modal w-full sm:w-auto px-8 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg transition-transform hover:scale-105">
+            Request Architecture Feasibility Audit
+          </button>
+          <a href="https://wa.me/918953011508?text=Hello%2C%20I%20need%20advice%20between%20on-grid%20and%20hybrid%20solar" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-750 text-slate-200 font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 border border-slate-700">
+            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+            <span>Chat on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="bg-slate-950 text-slate-400 pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800 text-xs">
+        <div class="space-y-4">
+          <div class="flex items-center space-x-2">
+            <span class="text-xl font-extrabold text-white tracking-tight">VIDYA VAHINI</span>
+            <span class="text-amber-400 font-black text-xl">SOLAR</span>
+          </div>
+          <p class="text-slate-400 leading-relaxed">
+            Leading Solar EPC contractor in Eastern Uttar Pradesh. A Unit of Risaenergy Private Limited (CIN: U35105UP2026PTC252185).
+          </p>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Quick Links</h4>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="hover:text-amber-400">Home</a></li>
+            <li><a href="services.html" class="hover:text-amber-400">Solar Solutions</a></li>
+            <li><a href="projects.html" class="hover:text-amber-400">Field Projects (80+ Sites)</a></li>
+            <li><a href="about.html" class="hover:text-amber-400">About Us</a></li>
+            <li><a href="blogs.html" class="hover:text-amber-400">Knowledge Hub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Locations</h4>
+          <p class="text-slate-300">10/C 4A Madhavpur Patti, Kharakauni, Naini, Prayagraj - 211008</p>
+          <p class="mt-2 text-slate-400">Koraon Hub: 169 Baidwar Kala - 212306</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Call Our Engineers</h4>
+          <p class="font-mono-numbers text-white font-bold">+91 94505 09659 / +91 89530 11508</p>
+          <p class="mt-1 text-slate-400">vidyavahinisolaragency@gmail.com</p>
+        </div>
+      </div>
+      <div class="pt-8 text-center text-slate-500 text-xs">
+        © 2026 Vidya Vahini Solar Agency & Risaenergy Private Limited. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick Quote Modal -->
+  <div id="quote-modal" class="hidden fixed inset-0 z-[99999] bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl border border-slate-200">
+      <button id="close-quote-modal" type="button" class="absolute top-5 right-5 p-2 text-slate-400 hover:text-slate-700">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div class="mb-5">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-100 px-2.5 py-1 rounded">
+          SYSTEM SIZING REQUEST
+        </span>
+        <h3 class="text-2xl font-black text-slate-900 mt-2">Get Architecture Sizing Quote</h3>
+      </div>
+      <form class="lead-form space-y-4 text-xs">
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Your Name *</label>
+          <input type="text" required placeholder="Full Name" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 outline-none">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Phone Number (WhatsApp) *</label>
+          <input type="tel" required placeholder="10-digit Mobile Number" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 outline-none">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Desired Architecture</label>
+          <select class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 outline-none">
+            <option>On-Grid Net-Metered (PM Surya Ghar Subsidy)</option>
+            <option selected>Smart Hybrid (Grid Export + Battery Backup)</option>
+            <option>Off-Grid Independent Storage System</option>
+            <option>Commercial Industrial Solar EPC (&gt;10 kW)</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm uppercase tracking-wider transition-colors">
+          Submit System Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

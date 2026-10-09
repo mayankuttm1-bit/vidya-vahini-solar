@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Water Pumps for Irrigation: Why Submersible Drives Beat Diesel Engines | Vidya Vahini Solar</title>
+  <meta name="description" content="Technical guide to 3HP, 5HP, and 7.5HP solar submersible water pumps in Koraon, Shankargarh, and Prayagraj. MPPT controllers, head calculations, and PM KUSUM benefits.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            solarDark: '#0B132B',
+            solarNavy: '#111D4A',
+            solarSlate: '#1E293B',
+            solarAmber: '#F59E0B',
+            solarAmberHover: '#D97706',
+            solarEmerald: '#10B981',
+            solarLight: '#F8FAFC'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-amber-500 selection:text-slate-900">
+
+  <!-- Micro Top Bar -->
+  <div class="bg-slate-950 text-slate-300 text-xs py-2 border-b border-slate-800 hidden sm:block">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <a href="tel:+919450509659" class="flex items-center hover:text-amber-400 transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 mr-1.5 text-amber-500"></i>
+          <span>+91 94505 09659</span>
+        </a>
+        <a href="mailto:vidyavahinisolaragency@gmail.com" class="flex items-center hover:text-amber-400 transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5 mr-1.5 text-amber-500"></i>
+          <span>vidyavahinisolaragency@gmail.com</span>
+        </a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-emerald-950 text-emerald-400 border border-emerald-800">
+          <i data-lucide="droplets" class="w-3 h-3 mr-1 text-emerald-400"></i> Agricultural Solar Pumping Specialist • Koraon & Meja Hub
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <header class="sticky top-0 z-40 glass-dark border-b border-slate-800 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Vector HTML Brand Logo -->
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <svg class="w-12 h-12 flex-shrink-0 transition-transform group-hover:scale-105 duration-200" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="44" stroke="#F59E0B" stroke-width="2" stroke-dasharray="4 6" opacity="0.6"/>
+            <path d="M 32 30 A 28 28 0 0 1 78 54 A 32 32 0 0 0 32 30 Z" fill="#F59E0B"/>
+            <circle cx="62" cy="38" r="14" fill="#D97706"/>
+            <polygon points="18,72 56,58 86,66 44,88" fill="#0284C7" stroke="#38BDF8" stroke-width="1.5"/>
+            <path d="M 44 88 Q 30 76 38 60 Q 42 70 56 68 Z" fill="#10B981"/>
+            <polygon points="52,42 45,54 51,54 44,68 59,51 52,51" fill="#FEF08A"/>
+          </svg>
+          <div class="flex flex-col">
+            <span class="text-xl font-extrabold tracking-tight text-white flex items-center leading-tight">
+              VIDYA VAHINI <span class="text-amber-400 ml-1.5 font-black">SOLAR</span>
+            </span>
+            <span class="text-[10px] tracking-widest text-slate-400 uppercase font-bold">
+              Agency • Unit of Risaenergy Pvt Ltd
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium">
+          <a href="index.html" class="text-slate-300 hover:text-amber-400 transition-colors">Home</a>
+          <a href="services.html" class="text-slate-300 hover:text-amber-400 transition-colors">Our Solutions</a>
+          <a href="projects.html" class="text-slate-300 hover:text-amber-400 transition-colors">Projects</a>
+          <a href="about.html" class="text-slate-300 hover:text-amber-400 transition-colors">About Us</a>
+          <a href="blogs.html" class="text-amber-400 font-semibold border-b-2 border-amber-400 pb-1">Knowledge Hub</a>
+          <a href="contact.html" class="text-slate-300 hover:text-amber-400 transition-colors">Contact</a>
+        </nav>
+
+        <div class="hidden md:flex items-center space-x-3.5">
+          <button type="button" class="trigger-quote-modal inline-flex items-center px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-md">
+            Get Free Quote
+          </button>
+        </div>
+
+        <!-- Mobile Header Actions -->
+        <div class="lg:hidden flex items-center space-x-2">
+          <a href="tel:+919450509659" class="p-2.5 rounded-xl bg-slate-800/90 text-amber-400 border border-slate-700 hover:bg-slate-700 flex items-center justify-center transition-colors">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+          </a>
+          <a href="https://wa.me/918953011508" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-emerald-950 text-emerald-400 border border-emerald-800 hover:bg-emerald-900 flex items-center justify-center transition-colors">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+          </a>
+          <button id="mobile-menu-btn" type="button" class="p-2.5 rounded-xl bg-slate-800/90 text-slate-200 border border-slate-700 hover:text-white hover:bg-slate-700 focus:outline-none transition-colors">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div id="mobile-menu-drawer" class="hidden lg:hidden fixed inset-0 z-[9999] bg-slate-950/80 backdrop-blur-sm transition-opacity">
+    <div class="fixed inset-y-0 right-0 max-w-xs sm:max-w-sm w-full bg-slate-900 border-l border-slate-800 p-6 flex flex-col justify-between shadow-2xl z-[10000] overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-5 border-b border-slate-800">
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+            <span class="text-base font-extrabold text-white">Vidya Vahini Menu</span>
+          </div>
+          <button id="close-mobile-menu" type="button" class="p-2 rounded-lg bg-slate-800 text-slate-400 hover:text-white border border-slate-700">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <nav class="mt-6 flex flex-col space-y-2 text-sm font-semibold">
+          <a href="index.html" class="flex items-center justify-between px-4 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">
+            <span class="flex items-center"><i data-lucide="home" class="w-4 h-4 mr-3 text-slate-400"></i> Home</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-600"></i>
+          </a>
+          <a href="services.html" class="flex items-center justify-between px-4 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">
+            <span class="flex items-center"><i data-lucide="zap" class="w-4 h-4 mr-3 text-slate-400"></i> Our Solutions</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-600"></i>
+          </a>
+          <a href="projects.html" class="flex items-center justify-between px-4 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">
+            <span class="flex items-center"><i data-lucide="layout-grid" class="w-4 h-4 mr-3 text-slate-400"></i> Projects (80+ Sites)</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-600"></i>
+          </a>
+          <a href="about.html" class="flex items-center justify-between px-4 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">
+            <span class="flex items-center"><i data-lucide="shield-check" class="w-4 h-4 mr-3 text-slate-400"></i> About & Legal</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-600"></i>
+          </a>
+          <a href="blogs.html" class="flex items-center justify-between px-4 py-3 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/30 font-bold">
+            <span class="flex items-center"><i data-lucide="book-open" class="w-4 h-4 mr-3 text-amber-400"></i> Knowledge Hub</span>
+            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+          <a href="contact.html" class="flex items-center justify-between px-4 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">
+            <span class="flex items-center"><i data-lucide="phone-call" class="w-4 h-4 mr-3 text-slate-400"></i> Contact Us</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-600"></i>
+          </a>
+        </nav>
+      </div>
+      <div class="pt-6 border-t border-slate-800 space-y-3">
+        <button type="button" class="trigger-quote-modal w-full py-3 px-4 rounded-xl text-xs font-bold uppercase tracking-wider bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-lg flex items-center justify-center space-x-2">
+          <i data-lucide="calculator" class="w-4 h-4"></i>
+          <span>Get Free Solar Quote</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Breadcrumbs & Header -->
+  <article class="py-12 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center space-x-2 text-xs text-slate-500 mb-6">
+        <a href="index.html" class="hover:text-amber-600 transition-colors">Home</a>
+        <span>/</span>
+        <a href="blogs.html" class="hover:text-amber-600 transition-colors">Knowledge Hub</a>
+        <span>/</span>
+        <span class="text-slate-800 font-semibold truncate">Solar Water Pumps Guide</span>
+      </nav>
+
+      <div class="flex flex-wrap items-center gap-3 mb-4">
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-300">
+          <i data-lucide="droplets" class="w-3.5 h-3.5 mr-1.5 text-emerald-600"></i> Agricultural Engineering
+        </span>
+        <span class="text-xs text-slate-500 flex items-center">
+          <i data-lucide="clock" class="w-3.5 h-3.5 mr-1 text-slate-400"></i> 7 Min Read
+        </span>
+        <span class="text-xs text-amber-700 bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded-full font-semibold">
+          PM KUSUM Aligned
+        </span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+        Solar Water Pumps for Irrigation: Why Submersible Drives Beat Diesel Engines in Vindhyan Soil
+      </h1>
+
+      <p class="text-lg text-slate-600 mt-4 leading-relaxed font-normal">
+        An engineering analysis of 3HP, 5HP, and 7.5HP solar borewell pumping systems in Koraon, Shankargarh, and Jasra. How variable-frequency MPPT drives provide steady, zero-cost irrigation from depths of over 200 feet.
+      </p>
+
+      <div class="mt-6 pt-6 border-t border-slate-200 flex items-center justify-between text-xs text-slate-600">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-full bg-emerald-950 text-emerald-400 flex items-center justify-center font-bold text-sm">
+            AG
+          </div>
+          <div>
+            <div class="font-bold text-slate-900">Vidya Vahini Agro-Solar Division</div>
+            <div class="text-slate-500">Field Operations • Baidwar Kala, Koraon Hub</div>
+          </div>
+        </div>
+        <div class="text-right">
+          <span class="font-semibold text-slate-900">Updated for 2026 Season</span>
+          <div class="text-slate-400">Pumping & Micro-Irrigation</div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Featured Image Banner -->
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-8">
+    <div class="rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+      <img src="assets/images/sol-pump.jpg" alt="5HP Solar Submersible Water Pump installed in Koraon farm" class="w-full h-72 sm:h-96 object-cover">
+    </div>
+  </div>
+
+  <!-- Body Content -->
+  <main class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 text-slate-700 leading-relaxed">
+
+      <!-- Executive Summary Box -->
+      <div class="p-6 sm:p-8 rounded-2xl bg-emerald-50/70 border border-emerald-200">
+        <h2 class="text-lg font-bold text-emerald-950 flex items-center">
+          <i data-lucide="check-circle" class="w-5 h-5 mr-2 text-emerald-600"></i> Key Farmer Takeaways
+        </h2>
+        <ul class="text-sm text-emerald-900 mt-3 space-y-2 leading-relaxed">
+          <li><strong>Zero Operating Fuel Cost:</strong> A typical 5HP diesel pump consumes 1.4 litres of diesel per hour (₹130/hr). Running it 600 hours per cropping season costs over ₹78,000 in fuel alone.</li>
+          <li><strong>Independence from Grid Rostering:</strong> Rural power feeders in Eastern UP often deliver 3-phase electricity between 11 PM and 4 AM. Solar pumps work entirely during daytime hours (8:30 AM to 5:00 PM).</li>
+          <li><strong>Lifespan & Payback:</strong> High-efficiency DC/AC solar pump drives pay for themselves within 2.5 crop cycles, while solar PV panels carry a 25-to-30 year linear warranty.</li>
+        </ul>
+      </div>
+
+      <!-- Section 1 -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          1. The Water Crisis in the Vindhyan Belt of Prayagraj
+        </h2>
+        <p>
+          In southern Prayagraj—stretching through Koraon, Meja, Jasra, and Shankargarh towards the Vindhyan plateau—farming faces unique geological challenges. The rocky red soil and sandstone bedrock mean groundwater tables rest deeper, often requiring borewells drilled to depths of <strong>180 to 320 feet</strong>.
+        </p>
+        <p>
+          Historically, farmers have relied on noisy, portable 5 HP to 8 HP diesel pump sets to pull water. But with diesel prices crossing ₹90 per litre, fuel expenses devour almost 40% of the entire net revenue from Rabi and Zaid crops.
+        </p>
+        <p>
+          Furthermore, hiring tractor-mounted borewell pumps costs between <strong>₹250 and ₹350 per hour</strong>, making frequent irrigation of sensitive cash crops (like mustard, pulses, and vegetables) financially ruinous.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          2. Anatomy of a Solar Submersible Pump System
+        </h2>
+        <p>
+          Unlike domestic water pumps, an agricultural solar pumping system is designed for high starting torque, variable insolation, and heavy daily discharge. The complete installation consists of:
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+          <div class="p-5 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+            <span class="text-xs font-bold uppercase text-amber-600">Component 1</span>
+            <h3 class="text-base font-bold text-slate-900">Bifacial PV Array</h3>
+            <p class="text-xs text-slate-600">
+              High-efficiency 550W+ Tier-1 modules mounted on heavy Hot-Dip Galvanized structures engineered to withstand 140 km/h wind shear.
+            </p>
+          </div>
+          <div class="p-5 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+            <span class="text-xs font-bold uppercase text-emerald-600">Component 2</span>
+            <h3 class="text-base font-bold text-slate-900">MPPT Solar VFD Drive</h3>
+            <p class="text-xs text-slate-600">
+              Maximum Power Point Tracking controller tracks morning-to-evening irradiance, soft-starting the pump without harmful inrush currents.
+            </p>
+          </div>
+          <div class="p-5 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+            <span class="text-xs font-bold uppercase text-cyan-600">Component 3</span>
+            <h3 class="text-base font-bold text-slate-900">Multi-Stage Submersible</h3>
+            <p class="text-xs text-slate-600">
+              Stainless steel (SS-304) impellers with water-lubricated motor, corrosion-proof mechanical seals, and built-in dry-run sensor protection.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Technical Sizing Table -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          3. Sizing Matrix: 3HP, 5HP, and 7.5HP Solar Pumps
+        </h2>
+        <p>
+          Choosing the correct pump rating requires matching borewell depth (Total Dynamic Head), delivery pipe diameter, and daily discharge requirements.
+        </p>
+
+        <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
+          <table class="min-w-full text-left text-xs sm:text-sm">
+            <thead class="bg-slate-900 text-white uppercase text-[11px]">
+              <tr>
+                <th class="p-3.5">Pump Capacity</th>
+                <th class="p-3.5">Recommended Solar Array</th>
+                <th class="p-3.5">Operating Depth (Head)</th>
+                <th class="p-3.5 text-amber-300">Daily Water Discharge</th>
+                <th class="p-3.5">Typical Land Coverage</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50">
+                <td class="p-3.5 font-bold text-slate-900">3 HP Submersible</td>
+                <td class="p-3.5">3,000 Wp (6 x 500W Panels)</td>
+                <td class="p-3.5">50 to 120 Feet (15 - 35 m)</td>
+                <td class="p-3.5 font-bold text-emerald-700">65,000 – 95,000 Litres / day</td>
+                <td class="p-3.5">2 to 4 Acres</td>
+              </tr>
+              <tr class="hover:bg-slate-50 bg-amber-50/40">
+                <td class="p-3.5 font-bold text-slate-900">5 HP Submersible (Most Popular)</td>
+                <td class="p-3.5">4,800 to 5,000 Wp (9-10 Modules)</td>
+                <td class="p-3.5">100 to 220 Feet (30 - 70 m)</td>
+                <td class="p-3.5 font-bold text-emerald-700">1,10,000 – 1,60,000 Litres / day</td>
+                <td class="p-3.5 font-semibold text-slate-900">5 to 10 Acres</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3.5 font-bold text-slate-900">7.5 HP Submersible</td>
+                <td class="p-3.5">7,500 Wp (14 Modules)</td>
+                <td class="p-3.5">180 to 320 Feet (55 - 100 m)</td>
+                <td class="p-3.5 font-bold text-emerald-700">1,70,000 – 2,40,000 Litres / day</td>
+                <td class="p-3.5">12 to 18 Acres</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3.5 font-bold text-slate-900">10 HP Deep Head Submersible</td>
+                <td class="p-3.5">10,000 Wp (18 Modules)</td>
+                <td class="p-3.5">250 to 400 Feet (75 - 120 m)</td>
+                <td class="p-3.5 font-bold text-emerald-700">2,20,000+ Litres / day</td>
+                <td class="p-3.5">20+ Acres / Orchards</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-slate-500 italic">
+          *Discharge figures calculated on a standard clear sunny day in Prayagraj with 7.5 peak sun hours.
+        </p>
+      </section>
+
+      <!-- Section 4: Real Case Study -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          4. Field Case Study: Surendra Yadav, Koraon (Prayagraj)
+        </h2>
+        <div class="p-6 rounded-2xl bg-slate-900 text-white space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <div>
+              <span class="text-xs text-amber-400 font-bold uppercase tracking-wider">Field Installation Profile</span>
+              <h3 class="text-lg font-bold text-white">5 HP Solar Submersible Borewell System</h3>
+            </div>
+            <span class="px-2.5 py-1 rounded bg-emerald-900/80 text-emerald-300 text-xs font-semibold border border-emerald-700">
+              Commissioned Oct 2025
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+            <div>
+              <div class="text-slate-400">Location:</div>
+              <div class="font-bold text-slate-200 text-sm">Village Baidwar Kala, Koraon</div>
+            </div>
+            <div>
+              <div class="text-slate-400">Total Land Irrigated:</div>
+              <div class="font-bold text-slate-200 text-sm">8.5 Acres (Wheat, Chana & Mustard)</div>
+            </div>
+            <div>
+              <div class="text-slate-400">Borewell Depth:</div>
+              <div class="font-bold text-slate-200 text-sm">210 Feet Static Head</div>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-slate-800 text-xs text-slate-300 space-y-2">
+            <p>
+              <em>"Earlier, during the Rabi season, I spent over ₹85,000 every year running my diesel engine. Half the time, the engine choked due to impure diesel or broke head gaskets. In 2025, Vidya Vahini Solar installed a 5 HP solar pump with 9 bifacial panels. Now the water starts flowing at 8:15 AM automatically. My mustard crop yield jumped 22% because of regular timely watering, and my fuel expense is literally zero."</em>
+            </p>
+            <div class="font-bold text-amber-400 text-right">— Surendra Yadav, Farmer & Progressive Agriculturist</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: 5-Year Financial Comparison -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          5. 5-Year Financial Comparison: Diesel Engine vs Solar Pump
+        </h2>
+        <p>
+          Let’s look at the actual numbers over a 5-year operating period for an 8-acre farm requiring 650 pumping hours annually:
+        </p>
+
+        <div class="overflow-x-auto rounded-xl border border-slate-200">
+          <table class="min-w-full text-left text-xs sm:text-sm">
+            <thead class="bg-slate-100 text-slate-900 font-bold">
+              <tr>
+                <th class="p-3">Cost Category</th>
+                <th class="p-3 text-rose-700">5 HP Diesel Engine</th>
+                <th class="p-3 text-emerald-700">5 HP Solar Submersible Pump</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr>
+                <td class="p-3 font-semibold text-slate-900">Initial Setup & Equipment</td>
+                <td class="p-3 text-slate-600">₹45,000 (Engine + Delivery Pipe)</td>
+                <td class="p-3 font-semibold text-slate-900">₹2,45,000 (Complete Turnkey Solar EPC)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold text-slate-900">Fuel / Electricity (5 Years)</td>
+                <td class="p-3 text-rose-600 font-bold">₹4,25,000 (Diesel @ ₹95/L, 1.4L/hr x 650 hrs x 5 yrs)</td>
+                <td class="p-3 text-emerald-600 font-bold">₹0 (Zero fuel cost forever)</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold text-slate-900">Maintenance, Oil & Spares (5 Yrs)</td>
+                <td class="p-3 text-rose-600">₹45,000 (Mobil oil, filters, nozzle repair)</td>
+                <td class="p-3 text-emerald-600">₹8,000 (Annual checkups, cable checks)</td>
+              </tr>
+              <tr class="bg-amber-50 font-bold text-slate-950">
+                <td class="p-3">Total 5-Year Outlay</td>
+                <td class="p-3 text-rose-700 text-base">₹5,15,000</td>
+                <td class="p-3 text-emerald-700 text-base">₹2,53,000</td>
+              </tr>
+              <tr class="bg-emerald-50 text-emerald-900 font-extrabold">
+                <td class="p-3">Net 5-Year Farmer Profit</td>
+                <td class="p-3">—</td>
+                <td class="p-3 text-emerald-700 text-base">₹2,62,000 Direct Cash Saved!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 6: Engineering Checklist for Rocky Terrain -->
+      <section class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          6. Engineering Checklist for Vindhyan Rocky Terrain
+        </h2>
+        <p>
+          Installing solar in rocky terrain like Koraon and Shankargarh requires specialized engineering to ensure 25+ years of trouble-free operation:
+        </p>
+        <ul class="space-y-2 text-sm list-disc list-inside text-slate-600">
+          <li><strong>Chemical Earthing in High-Resistivity Soil:</strong> Rocky sandstone offers poor natural grounding. Vidya Vahini uses bentonite-compound chemical earthing electrodes with less than 2-Ohm resistance to protect sensitive VFDs from lightning strikes.</li>
+          <li><strong>Heavy-Gauge Submersible Flat Cable:</strong> Deep borewells (200+ ft) experience severe voltage drops if undersized copper cables are used. We utilize ISI-marked 4 sq.mm to 6 sq.mm 3-core flat submersible cables.</li>
+          <li><strong>Dual Anti-Theft Panel Clamping:</strong> We secure modules using shear-nut break-away hardware and tamper-proof mounting clamps, preventing unauthorized detachment in remote open fields.</li>
+        </ul>
+      </section>
+
+      <!-- Bottom Conversion CTA -->
+      <div class="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-slate-900 via-solarDark to-slate-900 text-white text-center space-y-4 shadow-xl border border-slate-800">
+        <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center mx-auto mb-2 border border-amber-500/40">
+          <i data-lucide="droplet" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-black tracking-tight">
+          Ready to Irrigate Your Fields with Free Solar Power?
+        </h3>
+        <p class="text-slate-300 text-sm max-w-xl mx-auto leading-relaxed">
+          Book an on-site borewell depth audit with our Koraon or Prayagraj technical teams. We provide exact head calculations, panel sizing, and transparent turnkey pricing.
+        </p>
+        <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button type="button" class="trigger-quote-modal w-full sm:w-auto px-8 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg transition-transform hover:scale-105">
+            Book Borewell Site Audit
+          </button>
+          <a href="https://wa.me/918953011508?text=Hello%2C%20I%20want%20a%20solar%20pump%20quote%20for%20my%20farm" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>WhatsApp Agri Engineer</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="bg-slate-950 text-slate-400 pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800 text-xs">
+        <div class="space-y-4">
+          <div class="flex items-center space-x-2">
+            <span class="text-xl font-extrabold text-white tracking-tight">VIDYA VAHINI</span>
+            <span class="text-amber-400 font-black text-xl">SOLAR</span>
+          </div>
+          <p class="text-slate-400 leading-relaxed">
+            Leading Solar EPC contractor in Eastern Uttar Pradesh. A Unit of Risaenergy Private Limited (CIN: U35105UP2026PTC252185).
+          </p>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Quick Links</h4>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="hover:text-amber-400">Home</a></li>
+            <li><a href="services.html" class="hover:text-amber-400">Solar Solutions</a></li>
+            <li><a href="projects.html" class="hover:text-amber-400">Field Projects (80+ Sites)</a></li>
+            <li><a href="about.html" class="hover:text-amber-400">About Us</a></li>
+            <li><a href="blogs.html" class="hover:text-amber-400">Knowledge Hub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Locations</h4>
+          <p class="text-slate-300">10/C 4A Madhavpur Patti, Kharakauni, Naini, Prayagraj - 211008</p>
+          <p class="mt-2 text-slate-400">Koraon Hub: 169 Baidwar Kala - 212306</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Call Our Engineers</h4>
+          <p class="font-mono-numbers text-white font-bold">+91 94505 09659 / +91 89530 11508</p>
+          <p class="mt-1 text-slate-400">vidyavahinisolaragency@gmail.com</p>
+        </div>
+      </div>
+      <div class="pt-8 text-center text-slate-500 text-xs">
+        © 2026 Vidya Vahini Solar Agency & Risaenergy Private Limited. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick Quote Modal -->
+  <div id="quote-modal" class="hidden fixed inset-0 z-[99999] bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl border border-slate-200">
+      <button id="close-quote-modal" type="button" class="absolute top-5 right-5 p-2 text-slate-400 hover:text-slate-700">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div class="mb-5">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-100 px-2.5 py-1 rounded">
+          AGRI-SOLAR PUMP SIZING
+        </span>
+        <h3 class="text-2xl font-black text-slate-900 mt-2">Get Solar Pump Quotation</h3>
+      </div>
+      <form class="lead-form space-y-4 text-xs">
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Your Name *</label>
+          <input type="text" required placeholder="Full Name" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 outline-none">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Phone Number (WhatsApp) *</label>
+          <input type="tel" required placeholder="10-digit Mobile Number" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 outline-none">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 uppercase mb-1">Borewell Depth / Required HP</label>
+          <select class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-amber-500 outline-none">
+            <option>3 HP Submersible Pump (Borewell &lt; 120 ft)</option>
+            <option selected>5 HP Submersible Pump (Borewell 120-220 ft)</option>
+            <option>7.5 HP Submersible Pump (Borewell 200-300 ft)</option>
+            <option>10 HP Deep Head Submersible (Borewell &gt; 300 ft)</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm uppercase tracking-wider transition-colors">
+          Get Instant Pump Sizing
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
