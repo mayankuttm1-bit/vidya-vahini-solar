@@ -206,42 +206,77 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 6. High-Performance Intersection Observer Scroll Reveal System
   const revealElements = document.querySelectorAll('.reveal-init, .reveal-left, .reveal-right, .reveal-scale');
-  if ('IntersectionObserver' in window && revealElements.length > 0) {
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          observer.unobserve(entry.target);
+  
+  if (revealElements.length > 0) {
+    if ('IntersectionObserver' in window) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        root: null,
+        threshold: 0.05,
+        rootMargin: '0px 0px -20px 0px'
+      });
+
+      revealElements.forEach(el => {
+        // Immediate check for elements already above the fold or in viewport
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          // Slight delay for smooth initial entrance
+          setTimeout(() => el.classList.add('revealed'), 50);
+        } else {
+          revealObserver.observe(el);
         }
       });
-    }, {
-      root: null,
-      threshold: 0.1,
-      rootMargin: '0px 0px -40px 0px'
-    });
+    } else {
+      // Graceful fallback for non-supporting browsers
+      revealElements.forEach(el => el.classList.add('revealed'));
+    }
 
-    revealElements.forEach(el => revealObserver.observe(el));
-  } else {
-    // Graceful fallback for non-supporting browsers
-    revealElements.forEach(el => el.classList.add('revealed'));
+    // Safety timeout: Ensure no content stays hidden under slow network or low-power modes
+    setTimeout(() => {
+      revealElements.forEach(el => {
+        if (!el.classList.contains('revealed')) {
+          el.classList.add('revealed');
+        }
+      });
+    }, 2500);
   }
 
   // 7. Animated Metric Roll-Up Numbers
   const counterElements = document.querySelectorAll('[data-counter]');
-  if ('IntersectionObserver' in window && counterElements.length > 0) {
-    const counterObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateCounter(entry.target);
-          observer.unobserve(entry.target);
+  if (counterElements.length > 0) {
+    if ('IntersectionObserver' in window) {
+      const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      counterElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          setTimeout(() => animateCounter(el), 120);
+        } else {
+          counterObserver.observe(el);
         }
       });
-    }, { threshold: 0.25 });
-
-    counterElements.forEach(el => counterObserver.observe(el));
+    } else {
+      counterElements.forEach(el => animateCounter(el));
+    }
   }
 
   function animateCounter(el) {
+    if (el.dataset.animated === 'true') return;
+    el.dataset.animated = 'true';
+
     const target = parseFloat(el.getAttribute('data-counter'));
     if (isNaN(target)) return;
 
@@ -249,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const suffix = el.getAttribute('data-suffix') || '';
     const isCurrency = el.getAttribute('data-currency') === 'true';
     const isDecimal = String(target).includes('.');
-    const duration = 1800; // ms
+    const duration = 1600; // ms
     const startTime = performance.now();
 
     function update(now) {

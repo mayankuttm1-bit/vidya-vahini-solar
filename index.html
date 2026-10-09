@@ -214,8 +214,8 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         <!-- Left Content Column -->
-        <div class="lg:col-span-7 space-y-6">
-          <div class="inline-flex items-center px-3 py-1.5 rounded-full bg-slate-800/80 border border-amber-500/30 text-amber-300 text-xs font-semibold tracking-wide shadow-inner">
+        <div class="lg:col-span-7 space-y-6 reveal-left">
+          <div class="inline-flex items-center px-3 py-1.5 rounded-full bg-slate-800/80 border border-amber-500/30 text-amber-300 text-xs font-semibold tracking-wide shadow-inner shimmer-badge">
             <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse mr-2"></span>
             Official PM Surya Ghar Empaneled Partner in Prayagraj
           </div>
@@ -233,7 +233,7 @@
 
           <!-- Dual CTAs -->
           <div class="flex flex-wrap items-center gap-4 pt-2">
-            <a href="#solar-calculator-section" class="inline-flex items-center px-6 py-3.5 rounded-xl text-sm font-bold uppercase tracking-wider bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-xl shadow-amber-500/25 transition-all hover:-translate-y-0.5">
+            <a href="#solar-calculator-section" class="inline-flex items-center px-6 py-3.5 rounded-xl text-sm font-bold uppercase tracking-wider bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-xl shadow-amber-500/25 transition-all hover:-translate-y-0.5 solar-pulse">
               <i data-lucide="calculator" class="w-4 h-4 mr-2"></i>
               Calculate My Subsidy & ROI
             </a>
@@ -246,29 +246,29 @@
           <!-- Live Trust Micro-Strip -->
           <div class="pt-6 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-slate-300">
             <div>
-              <div class="text-2xl font-black text-amber-400 font-mono-numbers">10+ Years</div>
+              <div class="text-2xl font-black text-amber-400 font-mono-numbers" data-counter="10" data-suffix="+ Years">10+ Years</div>
               <div class="text-xs text-slate-400">Regional Mastery</div>
             </div>
             <div>
-              <div class="text-2xl font-black text-white font-mono-numbers">80+ Sites</div>
+              <div class="text-2xl font-black text-white font-mono-numbers" data-counter="80" data-suffix="+ Sites">80+ Sites</div>
               <div class="text-xs text-slate-400">Commissioned Plants</div>
             </div>
             <div>
-              <div class="text-2xl font-black text-emerald-400 font-mono-numbers">₹1,08,000</div>
+              <div class="text-2xl font-black text-emerald-400 font-mono-numbers" data-counter="108000" data-prefix="₹" data-currency="true">₹1,08,000</div>
               <div class="text-xs text-slate-400">Max Govt Subsidy</div>
             </div>
             <div>
-              <div class="text-2xl font-black text-white font-mono-numbers">25 Years</div>
+              <div class="text-2xl font-black text-white font-mono-numbers" data-counter="25" data-suffix=" Years">25 Years</div>
               <div class="text-xs text-slate-400">Linear Warranty</div>
             </div>
           </div>
         </div>
 
         <!-- Right Visual Showcase Column -->
-        <div class="lg:col-span-5">
+        <div class="lg:col-span-5 reveal-right">
           <div class="relative mx-auto max-w-md lg:max-w-none">
             <!-- Glassmorphic Card Container -->
-            <div class="glass-card-dark rounded-2xl p-6 shadow-2xl relative border border-slate-700/80">
+            <div class="glass-card-dark rounded-2xl p-6 shadow-2xl relative border border-slate-700/80 card-hover-lift">
               
               <!-- Card Badge -->
               <div class="flex justify-between items-center pb-4 border-b border-slate-700/60">
@@ -284,7 +284,7 @@
               <!-- Key Highlights Inside Card -->
               <div class="mt-4 space-y-3.5">
                 <!-- Verified Field Photo Thumbnail -->
-                <div class="relative rounded-xl overflow-hidden border border-slate-700/80 shadow-lg group">
+                <div class="relative rounded-xl overflow-hidden border border-slate-700/80 shadow-lg group image-hover-zoom">
                   <img src="assets/images/hero-solar-site.jpg" alt="Vidya Vahini Solar EPC Installation in Prayagraj" class="w-full h-44 object-cover transition-transform group-hover:scale-105 duration-300">
                   <div class="absolute bottom-2 left-2 bg-slate-950/80 backdrop-blur-sm px-2.5 py-1 rounded text-[11px] font-semibold text-emerald-400 border border-slate-700 flex items-center space-x-1">
                     <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
@@ -348,7 +348,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <!-- Continuous Metric Ribbon: Borderless with Glowing Hairline Dividers -->
-      <div class="glass-dark rounded-2xl py-6 px-4 sm:px-8 border border-white/5 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0">
+      <div class="glass-dark rounded-2xl py-6 px-4 sm:px-8 border border-white/5 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0 reveal-init card-hover-lift">
         
         <!-- Metric 1: 10+ Years Heritage -->
         <div class="flex-1 flex items-center space-x-4 lg:pr-8 lg:border-r border-slate-800 w-full lg:w-auto">
@@ -360,7 +360,7 @@
           </div>
           <div>
             <div class="flex items-baseline space-x-2">
-              <span class="text-2xl font-black text-white font-mono-numbers">10+</span>
+              <span class="text-2xl font-black text-white font-mono-numbers" data-counter="10" data-suffix="+">10+</span>
               <span class="text-xs uppercase font-extrabold tracking-wider text-amber-400">Years Heritage</span>
             </div>
             <p class="text-xs text-slate-400 mt-0.5">Foundations laid in 2014 across Prayagraj & Koraon</p>
@@ -377,7 +377,7 @@
           </div>
           <div>
             <div class="flex items-baseline space-x-2">
-              <span class="text-2xl font-black text-white font-mono-numbers">₹1,08,000</span>
+              <span class="text-2xl font-black text-white font-mono-numbers" data-counter="108000" data-prefix="₹" data-currency="true">₹1,08,000</span>
               <span class="text-xs uppercase font-extrabold tracking-wider text-emerald-400">Direct Subsidy</span>
             </div>
             <p class="text-xs text-slate-400 mt-0.5">PM Surya Ghar & UP State DBT Authorized Empaneled EPC</p>
@@ -449,7 +449,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-init">
         <span class="text-xs font-bold uppercase tracking-widest text-amber-600 bg-amber-100 px-3 py-1 rounded-full">
           ENGINEERING INTEGRITY & LOCAL PROMISE
         </span>
@@ -465,8 +465,8 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         <!-- Left: Engineering Blueprint & Radar Anatomy Display (Col 5) -->
-        <div class="lg:col-span-5 relative">
-          <div class="bg-slate-950 rounded-3xl p-8 border border-slate-800 shadow-2xl relative overflow-hidden text-white">
+        <div class="lg:col-span-5 relative reveal-left">
+          <div class="bg-slate-950 rounded-3xl p-8 border border-slate-800 shadow-2xl relative overflow-hidden text-white card-hover-lift">
             
             <!-- Concentric Background Radar Grid -->
             <div class="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
@@ -532,10 +532,10 @@
         </div>
 
         <!-- Right: Interconnected Progressive Value Stream (Col 7) -->
-        <div class="lg:col-span-7 space-y-7 pl-0 lg:pl-4">
+        <div class="lg:col-span-7 space-y-7 pl-0 lg:pl-4 reveal-right">
           
           <!-- Stream Item 1 -->
-          <div class="flex items-start space-x-5 group">
+          <div class="flex items-start space-x-5 group reveal-init delay-100">
             <div class="flex-shrink-0 relative">
               <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-lg border border-amber-200 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-300 shadow-sm font-mono-numbers">
                 01
@@ -558,7 +558,7 @@
           </div>
 
           <!-- Stream Item 2 -->
-          <div class="flex items-start space-x-5 group">
+          <div class="flex items-start space-x-5 group reveal-init delay-200">
             <div class="flex-shrink-0 relative">
               <div class="w-12 h-12 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-lg border border-slate-200 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-300 shadow-sm font-mono-numbers">
                 02
@@ -581,7 +581,7 @@
           </div>
 
           <!-- Stream Item 3 -->
-          <div class="flex items-start space-x-5 group">
+          <div class="flex items-start space-x-5 group reveal-init delay-300">
             <div class="flex-shrink-0 relative">
               <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-lg border border-emerald-200 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300 shadow-sm font-mono-numbers">
                 03
@@ -604,7 +604,7 @@
           </div>
 
           <!-- Stream Item 4 -->
-          <div class="flex items-start space-x-5 group">
+          <div class="flex items-start space-x-5 group reveal-init delay-400">
             <div class="flex-shrink-0">
               <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-lg border border-amber-200 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-300 shadow-sm font-mono-numbers">
                 04
@@ -638,7 +638,7 @@
   <section class="py-20 bg-slate-900 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 reveal-init">
         <div>
           <span class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full">
             TURNKEY EPC CAPABILITIES
@@ -655,9 +655,9 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
         <!-- Solution 1: PM Surya Ghar Rooftop -->
-        <div class="bg-slate-800 rounded-2xl p-7 border border-slate-700 flex flex-col justify-between hover:border-amber-500/50 transition-colors">
+        <div class="bg-slate-800 rounded-2xl p-7 border border-slate-700 flex flex-col justify-between hover:border-amber-500/50 transition-colors reveal-init card-hover-lift delay-100">
           <div>
-            <div class="rounded-xl overflow-hidden mb-4 border border-slate-700 shadow-md">
+            <div class="rounded-xl overflow-hidden mb-4 border border-slate-700 shadow-md image-hover-zoom">
               <img src="assets/images/sol-rooftop.jpg" alt="Residential Rooftop Solar PM Surya Ghar" class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
             </div>
             <div class="flex items-center justify-between mb-4">
@@ -685,12 +685,12 @@
         </div>
 
         <!-- Solution 2: Solar Atta Chakki (Signature) -->
-        <div class="bg-slate-800 rounded-2xl p-7 border-2 border-amber-500/60 flex flex-col justify-between relative shadow-xl shadow-amber-500/10">
+        <div class="bg-slate-800 rounded-2xl p-7 border-2 border-amber-500/60 flex flex-col justify-between relative shadow-xl shadow-amber-500/10 reveal-init card-hover-lift delay-200">
           <div class="absolute -top-3 right-6 bg-amber-500 text-slate-950 text-[11px] font-black uppercase px-3 py-0.5 rounded-full shadow">
             Regional Signature Specialization
           </div>
           <div>
-            <div class="rounded-xl overflow-hidden mb-4 border border-amber-500/40 shadow-md">
+            <div class="rounded-xl overflow-hidden mb-4 border border-amber-500/40 shadow-md image-hover-zoom">
               <img src="assets/images/sol-chakki.jpg" alt="Solar Atta Chakki Flour Mill Installation" class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300">
             </div>
             <div class="flex items-center justify-between mb-4">
@@ -718,9 +718,9 @@
         </div>
 
         <!-- Solution 3: Agricultural Solar Pumps -->
-        <div class="bg-slate-800/90 rounded-2xl p-6 sm:p-7 border border-slate-700/80 flex flex-col justify-between hover:border-emerald-500/50 transition-colors">
+        <div class="bg-slate-800/90 rounded-2xl p-6 sm:p-7 border border-slate-700/80 flex flex-col justify-between hover:border-emerald-500/50 transition-colors reveal-init card-hover-lift delay-300">
           <div>
-            <div class="rounded-xl overflow-hidden mb-4 border border-slate-700 shadow-md">
+            <div class="rounded-xl overflow-hidden mb-4 border border-slate-700 shadow-md image-hover-zoom">
               <img src="assets/images/sol-pump.jpg" alt="Agricultural Solar Water Pump Irrigation" class="w-full h-44 object-cover hover:scale-105 transition-transform duration-300">
             </div>
             <div class="flex items-center justify-between mb-3">
@@ -748,9 +748,9 @@
         </div>
 
         <!-- Solution 4: Commercial & Industrial EPC -->
-        <div class="bg-slate-800/90 rounded-2xl p-6 sm:p-7 border border-slate-700/80 flex flex-col justify-between hover:border-amber-500/50 transition-colors">
+        <div class="bg-slate-800/90 rounded-2xl p-6 sm:p-7 border border-slate-700/80 flex flex-col justify-between hover:border-amber-500/50 transition-colors reveal-init card-hover-lift delay-150">
           <div>
-            <div class="rounded-xl overflow-hidden mb-4 border border-slate-700 shadow-md">
+            <div class="rounded-xl overflow-hidden mb-4 border border-slate-700 shadow-md image-hover-zoom">
               <img src="assets/images/sol-commercial.jpg" alt="Commercial Factory Solar EPC" class="w-full h-44 object-cover hover:scale-105 transition-transform duration-300">
             </div>
             <div class="flex items-center justify-between mb-3">
@@ -778,9 +778,9 @@
         </div>
 
         <!-- Solution 5: Off-Grid & Battery Storage -->
-        <div class="bg-slate-800/90 rounded-2xl p-6 sm:p-7 border border-slate-700/80 flex flex-col justify-between hover:border-emerald-500/50 transition-colors">
+        <div class="bg-slate-800/90 rounded-2xl p-6 sm:p-7 border border-slate-700/80 flex flex-col justify-between hover:border-emerald-500/50 transition-colors reveal-init card-hover-lift delay-250">
           <div>
-            <div class="rounded-xl overflow-hidden mb-4 border border-slate-700 shadow-md">
+            <div class="rounded-xl overflow-hidden mb-4 border border-slate-700 shadow-md image-hover-zoom">
               <img src="assets/images/sol-hybrid.jpg" alt="Hybrid Power Inverter and Battery Bank" class="w-full h-44 object-cover hover:scale-105 transition-transform duration-300">
             </div>
             <div class="flex items-center justify-between mb-3">
@@ -808,7 +808,7 @@
         </div>
 
         <!-- Callout Banner Card -->
-        <div class="bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl p-7 text-slate-950 flex flex-col justify-between shadow-xl">
+        <div class="bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl p-7 text-slate-950 flex flex-col justify-between shadow-xl reveal-init card-hover-lift delay-350">
           <div>
             <span class="text-xs font-black uppercase tracking-wider bg-slate-950 text-white px-3 py-1 rounded-full">
               Free Site Survey
@@ -837,7 +837,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto mb-20">
+      <div class="text-center max-w-3xl mx-auto mb-20 reveal-init">
         <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 bg-emerald-100 px-3.5 py-1 rounded-full font-semibold">
           FRICTIONLESS 4-STAGE PIPELINE
         </span>
@@ -866,7 +866,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
           
           <!-- Node 01: Audit -->
-          <div class="flex flex-col items-center text-center group">
+          <div class="flex flex-col items-center text-center group reveal-scale card-hover-lift">
             <!-- Circular Luminous Node -->
             <div class="relative mb-6">
               <div class="w-20 h-20 rounded-full bg-white border-4 border-amber-500 shadow-xl shadow-amber-500/20 flex items-center justify-center transition-transform group-hover:scale-110 duration-300">
@@ -893,7 +893,7 @@
           </div>
 
           <!-- Node 02: Design & Portal -->
-          <div class="flex flex-col items-center text-center group">
+          <div class="flex flex-col items-center text-center group reveal-scale card-hover-lift delay-100">
             <!-- Circular Luminous Node -->
             <div class="relative mb-6">
               <div class="w-20 h-20 rounded-full bg-white border-4 border-emerald-500 shadow-xl shadow-emerald-500/20 flex items-center justify-center transition-transform group-hover:scale-110 duration-300">
@@ -920,7 +920,7 @@
           </div>
 
           <!-- Node 03: Installation -->
-          <div class="flex flex-col items-center text-center group">
+          <div class="flex flex-col items-center text-center group reveal-scale card-hover-lift delay-200">
             <!-- Circular Luminous Node -->
             <div class="relative mb-6">
               <div class="w-20 h-20 rounded-full bg-white border-4 border-amber-500 shadow-xl shadow-amber-500/20 flex items-center justify-center transition-transform group-hover:scale-110 duration-300">
@@ -947,7 +947,7 @@
           </div>
 
           <!-- Node 04: Net-Metering & Subsidy -->
-          <div class="flex flex-col items-center text-center group">
+          <div class="flex flex-col items-center text-center group reveal-scale card-hover-lift delay-300">
             <!-- Circular Luminous Node -->
             <div class="relative mb-6">
               <div class="w-20 h-20 rounded-full bg-white border-4 border-emerald-500 shadow-xl shadow-emerald-500/20 flex items-center justify-center transition-transform group-hover:scale-110 duration-300">
@@ -978,7 +978,7 @@
       </div>
 
       <!-- Integrated Pipeline Timeline Guarantee Banner -->
-      <div class="mt-14 max-w-3xl mx-auto rounded-full bg-slate-900 py-3.5 px-6 text-slate-300 flex flex-col sm:flex-row items-center justify-between text-xs shadow-xl border border-slate-800">
+      <div class="mt-14 max-w-3xl mx-auto rounded-full bg-slate-900 py-3.5 px-6 text-slate-300 flex flex-col sm:flex-row items-center justify-between text-xs shadow-xl border border-slate-800 reveal-init">
         <div class="flex items-center space-x-2">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
           <span class="font-semibold text-white">Guaranteed Fast-Track Execution:</span>
@@ -998,7 +998,7 @@
   <section id="solar-calculator-section" class="py-20 bg-slate-950 text-white relative bg-solar-grid">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
-      <div class="text-center max-w-3xl mx-auto mb-14">
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal-init">
         <span class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full">
           INTERACTIVE SIZING ENGINE (PM SURYA GHAR)
         </span>
@@ -1010,11 +1010,11 @@
         </p>
       </div>
 
-      <div class="bg-slate-900 rounded-3xl border border-slate-800 p-8 sm:p-12 shadow-2xl max-w-5xl mx-auto">
+      <div class="bg-slate-900 rounded-3xl border border-slate-800 p-8 sm:p-12 shadow-2xl max-w-5xl mx-auto reveal-scale card-hover-lift">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           
           <!-- Slider Input Column -->
-          <div class="lg:col-span-6 space-y-8">
+          <div class="lg:col-span-6 space-y-8 reveal-left">
             <div>
               <div class="flex justify-between items-center mb-3">
                 <label for="solar-bill-slider" class="text-sm font-semibold text-slate-300">
@@ -1062,7 +1062,7 @@
           </div>
 
           <!-- Dynamic Output Matrix Column -->
-          <div class="lg:col-span-6 bg-slate-950 p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-5">
+          <div class="lg:col-span-6 bg-slate-950 p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-5 reveal-right">
             <h3 class="text-base font-bold text-white uppercase tracking-wider pb-3 border-b border-slate-800 flex items-center justify-between">
               <span>Financial Breakdown</span>
               <span class="text-xs text-emerald-400 font-medium">PM Surya Ghar Benefit</span>
@@ -1101,7 +1101,7 @@
             <!-- WhatsApp Dossier CTA -->
             <div class="pt-3 space-y-2">
               <a id="calc-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer"
-                 class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold bg-emerald-600 hover:bg-emerald-500 text-white shadow-lg shadow-emerald-600/25 transition-all hover:scale-[1.01]">
+                 class="w-full inline-flex items-center justify-center py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold bg-emerald-600 hover:bg-emerald-500 text-white shadow-lg shadow-emerald-600/25 transition-all hover:scale-[1.01] emerald-pulse">
                 <i data-lucide="message-circle" class="w-4 h-4 mr-2"></i>
                 Send My Sizing Dossier to WhatsApp
               </a>
@@ -1124,7 +1124,7 @@
   <section class="py-20 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 reveal-init">
         <div>
           <span class="text-xs font-bold uppercase tracking-widest text-amber-600 bg-amber-100 px-3 py-1 rounded-full">
             VERIFIED GROUND RESULTS
@@ -1144,9 +1144,9 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         
         <!-- Project 1: Site #79 Meja Prayagraj -->
-        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col justify-between group">
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col justify-between group reveal-init card-hover-lift">
           <div>
-            <div class="relative overflow-hidden h-44">
+            <div class="relative overflow-hidden h-44 image-hover-zoom">
               <img src="assets/images/proj-meja.jpg" alt="Site #79 Meja 10HP Solar Flour Mill" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
               <span class="absolute top-3 left-3 text-[11px] font-bold uppercase bg-slate-950/80 text-amber-400 px-2.5 py-1 rounded backdrop-blur-sm border border-slate-700">
                 Atta Chakki • Site #79
@@ -1171,9 +1171,9 @@
         </div>
 
         <!-- Project 2: Madnapur Gonda -->
-        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col justify-between group">
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col justify-between group reveal-init card-hover-lift delay-100">
           <div>
-            <div class="relative overflow-hidden h-44">
+            <div class="relative overflow-hidden h-44 image-hover-zoom">
               <img src="assets/images/proj-gonda.jpg" alt="19 kW Solar Atta Chakki Gonda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
               <span class="absolute top-3 left-3 text-[11px] font-bold uppercase bg-slate-950/80 text-amber-400 px-2.5 py-1 rounded backdrop-blur-sm border border-slate-700">
                 Rural Commercial
@@ -1198,9 +1198,9 @@
         </div>
 
         <!-- Project 3: Kaushambi 10kVA UTL Plant -->
-        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col justify-between group">
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col justify-between group reveal-init card-hover-lift delay-200">
           <div>
-            <div class="relative overflow-hidden h-44">
+            <div class="relative overflow-hidden h-44 image-hover-zoom">
               <img src="assets/images/proj-kaushambi.jpg" alt="10 kVA Industrial Solar Plant Kaushambi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
               <span class="absolute top-3 left-3 text-[11px] font-bold uppercase bg-slate-950/80 text-amber-400 px-2.5 py-1 rounded backdrop-blur-sm border border-slate-700">
                 Industrial Hybrid
@@ -1225,9 +1225,9 @@
         </div>
 
         <!-- Project 4: Naini Residential Rooftop -->
-        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col justify-between group">
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col justify-between group reveal-init card-hover-lift delay-300">
           <div>
-            <div class="relative overflow-hidden h-44">
+            <div class="relative overflow-hidden h-44 image-hover-zoom">
               <img src="assets/images/proj-naini.jpg" alt="5 kW On-Grid Residential Rooftop Naini" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
               <span class="absolute top-3 left-3 text-[11px] font-bold uppercase bg-slate-950/80 text-emerald-400 px-2.5 py-1 rounded backdrop-blur-sm border border-slate-700">
                 PM Surya Ghar Rooftop
@@ -1262,7 +1262,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Micro-Header -->
-      <div class="text-center max-w-2xl mx-auto mb-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal-init">
         <span class="text-xs font-bold uppercase tracking-widest text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
           DIRECT AUTHORIZED CHANNEL PARTNERS
         </span>
@@ -1272,11 +1272,11 @@
       </div>
 
       <!-- Floating Monolith Brand Showcase: Borderless Ribbon with Organic Tech Chips -->
-      <div class="bg-slate-50/80 rounded-3xl p-8 sm:p-10 border border-slate-200/60 shadow-inner">
+      <div class="bg-slate-50/80 rounded-3xl p-8 sm:p-10 border border-slate-200/60 shadow-inner reveal-scale">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 items-center text-center">
           
           <!-- Brand 1: Loom Solar -->
-          <div class="flex flex-col items-center group">
+          <div class="flex flex-col items-center group card-hover-lift">
             <div class="text-2xl font-black text-slate-900 tracking-wider group-hover:text-amber-600 transition-colors">
               LOOM SOLAR
             </div>
@@ -1288,7 +1288,7 @@
           </div>
 
           <!-- Brand 2: UTL Solar -->
-          <div class="flex flex-col items-center group">
+          <div class="flex flex-col items-center group card-hover-lift delay-100">
             <div class="text-2xl font-black text-slate-900 tracking-wider group-hover:text-amber-600 transition-colors">
               UTL SOLAR
             </div>
@@ -1300,7 +1300,7 @@
           </div>
 
           <!-- Brand 3: Eapro Global -->
-          <div class="flex flex-col items-center group">
+          <div class="flex flex-col items-center group card-hover-lift delay-200">
             <div class="text-2xl font-black text-slate-900 tracking-wider group-hover:text-emerald-600 transition-colors">
               EAPRO GLOBAL
             </div>
@@ -1312,7 +1312,7 @@
           </div>
 
           <!-- Brand 4: Advon Power -->
-          <div class="flex flex-col items-center group">
+          <div class="flex flex-col items-center group card-hover-lift delay-300">
             <div class="text-2xl font-black text-slate-900 tracking-wider group-hover:text-amber-600 transition-colors">
               ADVON POWER
             </div>
@@ -1356,7 +1356,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         <!-- Left: Context & Golden Grant Seal -->
-        <div class="lg:col-span-5 space-y-6">
+        <div class="lg:col-span-5 space-y-6 reveal-left">
           <div class="inline-flex items-center space-x-2">
             <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
             <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-900/60 border border-emerald-700/80 px-3 py-1 rounded-full">
@@ -1373,13 +1373,13 @@
           </p>
 
           <!-- Golden Official Grant Stamp Seal -->
-          <div class="p-5 rounded-2xl bg-gradient-to-br from-emerald-900/90 to-slate-900 border border-amber-500/40 shadow-xl flex items-center space-x-4">
+          <div class="p-5 rounded-2xl bg-gradient-to-br from-emerald-900/90 to-slate-900 border border-amber-500/40 shadow-xl flex items-center space-x-4 card-hover-lift shimmer-badge">
             <div class="w-14 h-14 rounded-full bg-amber-500/20 border-2 border-amber-400 flex items-center justify-center flex-shrink-0 text-amber-400">
               <i data-lucide="award" class="w-7 h-7"></i>
             </div>
             <div>
               <span class="text-[10px] font-black uppercase tracking-widest text-amber-300">Guaranteed State Cap</span>
-              <div class="text-2xl font-black text-white font-mono-numbers leading-tight">₹ 1,08,000</div>
+              <div class="text-2xl font-black text-white font-mono-numbers leading-tight" data-counter="108000">₹ 1,08,000</div>
               <span class="text-xs text-emerald-300">Central ₹78k + UP State ₹30k Combined DBT</span>
             </div>
           </div>
@@ -1401,10 +1401,10 @@
         </div>
 
         <!-- Right: Ascending Visual Subsidy Staircase Ladder -->
-        <div class="lg:col-span-7 space-y-4">
+        <div class="lg:col-span-7 space-y-4 reveal-right">
           
           <!-- Tier 1: 1 kW -->
-          <div class="p-5 rounded-2xl bg-slate-900/80 border border-emerald-800/60 hover:border-emerald-500/80 transition-all">
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-emerald-800/60 hover:border-emerald-500/80 transition-all card-hover-lift">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div class="flex items-center space-x-3">
                 <span class="w-9 h-9 rounded-xl bg-slate-800 text-slate-300 font-mono-numbers font-black text-sm flex items-center justify-center border border-slate-700">
@@ -1416,14 +1416,14 @@
                 </div>
               </div>
               <div class="text-left sm:text-right">
-                <span class="text-xl font-black text-emerald-400 font-mono-numbers">₹ 33,000</span>
+                <span class="text-xl font-black text-emerald-400 font-mono-numbers" data-counter="33000">₹ 33,000</span>
                 <span class="text-[11px] text-slate-400 block font-mono-numbers">Central ₹30k + UP ₹3k</span>
               </div>
             </div>
           </div>
 
           <!-- Tier 2: 2 kW -->
-          <div class="p-5 rounded-2xl bg-slate-900/80 border border-emerald-800/60 hover:border-emerald-500/80 transition-all">
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-emerald-800/60 hover:border-emerald-500/80 transition-all card-hover-lift delay-100">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div class="flex items-center space-x-3">
                 <span class="w-9 h-9 rounded-xl bg-slate-800 text-amber-400 font-mono-numbers font-black text-sm flex items-center justify-center border border-amber-500/40">
@@ -1435,14 +1435,14 @@
                 </div>
               </div>
               <div class="text-left sm:text-right">
-                <span class="text-xl font-black text-emerald-400 font-mono-numbers">₹ 66,000</span>
+                <span class="text-xl font-black text-emerald-400 font-mono-numbers" data-counter="66000">₹ 66,000</span>
                 <span class="text-[11px] text-slate-400 block font-mono-numbers">Central ₹60k + UP ₹6k</span>
               </div>
             </div>
           </div>
 
           <!-- Tier 3: 3 kW to 10 kW (Featured Highlighted Peak) -->
-          <div class="p-6 rounded-2xl bg-gradient-to-r from-emerald-950 via-slate-900 to-slate-900 border-2 border-amber-500 shadow-2xl relative overflow-hidden">
+          <div class="p-6 rounded-2xl bg-gradient-to-r from-emerald-950 via-slate-900 to-slate-900 border-2 border-amber-500 shadow-2xl relative overflow-hidden card-hover-lift delay-200">
             <div class="absolute top-0 right-0 bg-amber-500 text-slate-950 text-[10px] font-black uppercase px-3 py-1 rounded-bl-xl tracking-wider">
               ★ Maximum Subsidy Tier
             </div>
@@ -1463,7 +1463,7 @@
                 </div>
               </div>
               <div class="text-left sm:text-right">
-                <span class="text-3xl font-black text-amber-400 font-mono-numbers">₹ 1,08,000</span>
+                <span class="text-3xl font-black text-amber-400 font-mono-numbers" data-counter="108000">₹ 1,08,000</span>
                 <span class="text-[11px] text-emerald-300 block font-mono-numbers">Central ₹78k + UP ₹30k Max</span>
               </div>
             </div>
@@ -1484,7 +1484,7 @@
               <span class="text-xs text-slate-400">
                 Zero electricity bill guaranteed with UPPCL bi-directional net meter.
               </span>
-              <button type="button" class="trigger-quote-modal px-4 py-2 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-colors whitespace-nowrap shadow-lg">
+              <button type="button" class="trigger-quote-modal px-4 py-2 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-xl transition-colors whitespace-nowrap shadow-lg solar-pulse">
                 Claim ₹1,08,000 Subsidy
               </button>
             </div>
@@ -1503,7 +1503,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <!-- Section Header -->
-      <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal-init">
         <span class="text-xs font-bold uppercase tracking-widest text-amber-600 bg-amber-100 px-3.5 py-1 rounded-full font-semibold">
           VERIFIED SOCIAL PROOF & LOCAL STORIES
         </span>
@@ -1519,7 +1519,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         
         <!-- Left: Featured Deep-Dive Case Spotlight (Col 7) -->
-        <div class="lg:col-span-7 bg-slate-950 text-white rounded-3xl p-8 sm:p-10 border border-slate-800 shadow-2xl relative overflow-hidden">
+        <div class="lg:col-span-7 bg-slate-950 text-white rounded-3xl p-8 sm:p-10 border border-slate-800 shadow-2xl relative overflow-hidden reveal-left card-hover-lift">
           
           <!-- Spotlight Badge & Rating -->
           <div class="flex items-center justify-between pb-6 border-b border-slate-800">
@@ -1574,10 +1574,10 @@
         </div>
 
         <!-- Right: Stacked Organic Speech Bubbles (Col 5) -->
-        <div class="lg:col-span-5 space-y-8">
+        <div class="lg:col-span-5 space-y-8 reveal-right">
           
           <!-- Speech Bubble 1: Residential Rooftop -->
-          <div class="relative">
+          <div class="relative card-hover-lift">
             <div class="speech-bubble bg-white p-7 border border-slate-200/90 shadow-md">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded">
@@ -1599,7 +1599,7 @@
           </div>
 
           <!-- Speech Bubble 2: Commercial 19kW Mill -->
-          <div class="relative">
+          <div class="relative card-hover-lift delay-100">
             <div class="speech-bubble bg-white p-7 border border-slate-200/90 shadow-md">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded">
@@ -1633,7 +1633,7 @@
   <section class="py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center mb-14">
+      <div class="text-center mb-14 reveal-init">
         <span class="text-xs font-bold uppercase tracking-widest text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
           CLARITY & ASSURANCE
         </span>
@@ -1648,7 +1648,7 @@
       <div class="space-y-4">
         
         <!-- FAQ 1 -->
-        <div class="faq-item active bg-slate-50 border border-slate-200 rounded-xl overflow-hidden transition-all">
+        <div class="faq-item active bg-slate-50 border border-slate-200 rounded-xl overflow-hidden transition-all reveal-init">
           <button type="button" class="faq-trigger w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center focus:outline-none">
             <span>How does net-metering work with UPPCL in Prayagraj?</span>
             <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-500 transition-transform"></i>
@@ -1659,7 +1659,7 @@
         </div>
 
         <!-- FAQ 2 -->
-        <div class="faq-item bg-slate-50 border border-slate-200 rounded-xl overflow-hidden transition-all">
+        <div class="faq-item bg-slate-50 border border-slate-200 rounded-xl overflow-hidden transition-all reveal-init delay-100">
           <button type="button" class="faq-trigger w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center focus:outline-none">
             <span>How much money can a 10 HP Solar Atta Chakki (Flour Mill) save?</span>
             <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-500 transition-transform"></i>
@@ -1670,7 +1670,7 @@
         </div>
 
         <!-- FAQ 3 -->
-        <div class="faq-item bg-slate-50 border border-slate-200 rounded-xl overflow-hidden transition-all">
+        <div class="faq-item bg-slate-50 border border-slate-200 rounded-xl overflow-hidden transition-all reveal-init delay-150">
           <button type="button" class="faq-trigger w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center focus:outline-none">
             <span>How is the PM Surya Ghar subsidy deposited into my account?</span>
             <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-500 transition-transform"></i>
@@ -1681,7 +1681,7 @@
         </div>
 
         <!-- FAQ 4 -->
-        <div class="faq-item bg-slate-50 border border-slate-200 rounded-xl overflow-hidden transition-all">
+        <div class="faq-item bg-slate-50 border border-slate-200 rounded-xl overflow-hidden transition-all reveal-init delay-200">
           <button type="button" class="faq-trigger w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center focus:outline-none">
             <span>What happens during cloudy days or monsoon season?</span>
             <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-500 transition-transform"></i>
@@ -1692,7 +1692,7 @@
         </div>
 
         <!-- FAQ 5 -->
-        <div class="faq-item bg-slate-50 border border-slate-200 rounded-xl overflow-hidden transition-all">
+        <div class="faq-item bg-slate-50 border border-slate-200 rounded-xl overflow-hidden transition-all reveal-init delay-250">
           <button type="button" class="faq-trigger w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center focus:outline-none">
             <span>What warranty do you provide on panels and inverters?</span>
             <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-amber-500 transition-transform"></i>
@@ -1715,7 +1715,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         
         <!-- Left Location Cards Column -->
-        <div class="lg:col-span-5 space-y-6">
+        <div class="lg:col-span-5 space-y-6 reveal-left">
           <div>
             <span class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full">
               VISIT OUR OFFICES
@@ -1729,7 +1729,7 @@
           </div>
 
           <!-- HQ Naini Card -->
-          <div class="p-5 rounded-2xl bg-slate-800 border border-slate-700 space-y-2.5">
+          <div class="p-5 rounded-2xl bg-slate-800 border border-slate-700 space-y-2.5 card-hover-lift">
             <div class="flex items-center justify-between">
               <span class="text-xs font-bold uppercase text-amber-400 tracking-wider">Headquarters & Urban EPC Office</span>
               <span class="text-xs text-slate-400 font-mono-numbers">PIN 211008</span>
@@ -1747,7 +1747,7 @@
           </div>
 
           <!-- Koraon Branch Card -->
-          <div class="p-5 rounded-2xl bg-slate-800 border border-slate-700 space-y-2.5">
+          <div class="p-5 rounded-2xl bg-slate-800 border border-slate-700 space-y-2.5 card-hover-lift delay-100">
             <div class="flex items-center justify-between">
               <span class="text-xs font-bold uppercase text-emerald-400 tracking-wider">Rural Hub & Spare Parts Depot</span>
               <span class="text-xs text-slate-400 font-mono-numbers">PIN 212306</span>
@@ -1764,8 +1764,8 @@
         </div>
 
         <!-- Right Interactive Google Maps Embed Column -->
-        <div class="lg:col-span-7">
-          <div class="rounded-2xl overflow-hidden border border-slate-700 shadow-2xl h-[420px] bg-slate-800 relative">
+        <div class="lg:col-span-7 reveal-right">
+          <div class="rounded-2xl overflow-hidden border border-slate-700 shadow-2xl h-[420px] bg-slate-800 relative card-hover-lift">
             <iframe 
               title="Vidya Vahini Solar Agency Location Map"
               class="w-full h-full border-0 grayscale-[20%] contrast-125"
@@ -1786,8 +1786,8 @@
   <section id="contact-form-section" class="py-20 bg-slate-50">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-xl">
-        <div class="text-center max-w-xl mx-auto mb-10">
+      <div class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-xl reveal-scale card-hover-lift">
+        <div class="text-center max-w-xl mx-auto mb-10 reveal-init">
           <span class="text-xs font-bold uppercase tracking-widest text-amber-600 bg-amber-100 px-3 py-1 rounded-full">
             FREE ENGINEERING ASSESSMENT
           </span>
@@ -1849,7 +1849,7 @@
           </div>
 
           <button type="submit" 
-                  class="w-full py-4 rounded-xl text-sm font-bold uppercase tracking-wider bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-xl shadow-amber-500/25 transition-all">
+                  class="w-full py-4 rounded-xl text-sm font-bold uppercase tracking-wider bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-xl shadow-amber-500/25 transition-all solar-pulse">
             Submit Free Site Survey Request
           </button>
 
